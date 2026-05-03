@@ -139,7 +139,7 @@ footer {
 <h2>Contact Us</h2>
 
 <p><strong>Phone:</strong> +91 9870369879</p>
-<p><strong>Location:</strong> Borivali West Maharashtra 400091</p>
+<p><strong>Location:</strong> Borivali West, Mumbai, Maharashtra 400091</p>
 
 <!-- Google Map -->
 <iframe 
@@ -148,12 +148,33 @@ footer {
 </iframe>
 
 <h3>Book Service</h3>
-<form>
-<input type="text" placeholder="Your Name" required><br>
-<input type="tel" placeholder="Phone Number" required><br>
-<textarea placeholder="Your Problem"></textarea><br>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Your Name" required><br>
+<input type="tel" id="phone" placeholder="Phone Number" required><br>
+<textarea id="problem" placeholder="Your Problem"></textarea><br>
 <button class="btn">Submit</button>
 </form>
+
+<script>
+
+function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var problem = document.getElementById("problem").value;
+
+    var message = "New Booking:%0A"
+        + "Name: " + name + "%0A"
+        + "Phone: " + phone + "%0A"
+        + "Problem: " + problem;
+
+    var whatsappNumber = "919870369879";
+
+    var url = "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+    window.open(url, "_blank");
+}
+</script>
 
 </section>
 
