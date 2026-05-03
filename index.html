@@ -1,122 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Car AC Service</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #0d6efd;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #0d6efd;
-        }
-        .hero {
-            padding: 50px;
-            text-align: center;
-            background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
-            color: white;
-        }
-        .section {
-            padding: 30px;
-            text-align: center;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 10px;
-            width: 250px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        .btn {
-            background: #0d6efd;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam Car AC Service</title>
+
+<style>
+body { margin:0; font-family: Arial; background:#f4f4f4; }
+
+header {
+  background:#0d6efd;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+nav {
+  background:#333;
+  text-align:center;
+  padding:10px;
+}
+nav a {
+  color:white;
+  margin:10px;
+  text-decoration:none;
+}
+
+.hero {
+  background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover;
+  color:white;
+  text-align:center;
+  padding:60px;
+}
+
+.section {
+  padding:30px;
+  text-align:center;
+}
+
+.services, .gallery {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background:white;
+  padding:20px;
+  margin:10px;
+  width:250px;
+  border-radius:8px;
+}
+
+.gallery img {
+  width:250px;
+  height:160px;
+  object-fit:cover;
+  margin:10px;
+  border-radius:8px;
+}
+
+.btn {
+  background:#0d6efd;
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  text-decoration:none;
+}
+
+form input, form textarea {
+  width:80%;
+  padding:10px;
+  margin:10px;
+}
+
+footer {
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+/* WhatsApp button */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Shivam Car AC Service</h1>
-    <p>Cooling Your Ride, Anytime!</p>
+<h1>Shivam Car AC Service</h1>
+<p>Cooling Your Ride, Anytime!</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section class="hero" id="home">
-    <h2>Expert Car AC Repair & Service</h2>
-    <p>Fast, Reliable & Affordable</p>
-    <a href="#contact" class="btn">Book Now</a>
+<h2>Expert Car AC Repair</h2>
+<p>Fast & Affordable Service</p>
+<a href="#contact" class="btn">Book Now</a>
 </section>
 
 <section class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">
-            <h3>AC Gas Filling</h3>
-            <p>High-quality gas refill for maximum cooling.</p>
-        </div>
-        <div class="card">
-            <h3>AC Repair</h3>
-            <p>Fix cooling issues, leaks, and compressor problems.</p>
-        </div>
-        <div class="card">
-            <h3>Full AC Service</h3>
-            <p>Complete cleaning and performance check.</p>
-        </div>
-    </div>
+<h2>Our Services</h2>
+<div class="services">
+<div class="card"><h3>AC Gas Filling</h3></div>
+<div class="card"><h3>AC Repair</h3></div>
+<div class="card"><h3>Full AC Service</h3></div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<h2>Our Work</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc">
+<img src="https://images.unsplash.com/photo-1515923162038-3a7c5b0f7e5c">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+</div>
 </section>
 
 <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91 9870369879</p>
-    <p><strong>Location:</strong> Borivali West, Maharashtra</p>
-    <p>Call now or visit us for quick service!</p>
+<h2>Contact Us</h2>
+
+<p><strong>Phone:</strong> +91 9870369879</p>
+<p><strong>Location:</strong> Borivali West Maharashtra 400091</p>
+
+<!-- Google Map -->
+<iframe 
+  src="https://www.google.com/maps?q=Nagpur&output=embed"
+  width="90%" height="300" style="border:0;">
+</iframe>
+
+<h3>Book Service</h3>
+<form>
+<input type="text" placeholder="Your Name" required><br>
+<input type="tel" placeholder="Phone Number" required><br>
+<textarea placeholder="Your Problem"></textarea><br>
+<button class="btn">Submit</button>
+</form>
+
 </section>
 
 <footer>
-    <p>© 2026 Shivam Car AC Service | All Rights Reserved</p>
+<p>© 2026 Shivam Car AC Service</p>
 </footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/qr/FG4NK6TO4GMDA1" target="_blank">💬</a>
 
 </body>
 </html>
